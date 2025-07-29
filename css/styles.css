@@ -172,8 +172,7 @@ p {
     clip: rect(0 0 0 0);
     overflow: hidden;  
 }
-
-.benefits-container{
+.benefits{
     padding: 120px 0;
 }
 .benefits-list{
