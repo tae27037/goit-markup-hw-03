@@ -175,17 +175,15 @@ p {
 
 .benefits-container{
     padding: 120px 0;
-    width: calc((100%-72px)/4);
 }
 .benefits-list{
     display: flex;
-    /* margin: 120px 0; */
     gap: 24px;
     
 }
-/* .benefits-item{
-    width: calc((100%-72px)/4);
-} */
+.benefits-item{
+    flex-basis: calc((100% - 72px) / 4);
+} 
 .benefits-title, .benefits-subtitle{
     color: #2e2f42;
     font-weight: 500;
