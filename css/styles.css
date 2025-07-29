@@ -208,7 +208,7 @@ p {
 .team{
     background-color: #F4F4FD; 
     padding: 120px 0;
-    margin-bottom: 72px;
+   
 }
 .team-title, .portfolio-title{
     color: #2E2F42;
@@ -219,6 +219,7 @@ p {
     text-align: center; 
     text-transform: capitalize;
     padding-bottom: 72px;
+    margin-bottom: 72px;
 } 
 .team-list{
     display: flex;
