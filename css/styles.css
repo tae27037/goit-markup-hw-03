@@ -170,7 +170,9 @@ p {
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
-    overflow: hidden;  }
+    overflow: hidden;  
+    
+}
 .benefits{
     padding: 120px 0;
 }
@@ -182,7 +184,7 @@ p {
 .benefits-item{
     flex-basis: calc((100% - 72px) / 4);
 } 
-.benefits-title, .benefits-subtitle{
+.benefits-subtitle{
     color: #2e2f42;
     font-weight: 500;
     font-size: 20px;
