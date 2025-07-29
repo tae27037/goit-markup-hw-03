@@ -133,11 +133,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 169px;
+   min-width: 169px;
     height: 56px;
     border-radius: 4px;
     margin: 0 auto;
     border: none;
+    display: block;
 }
 .title .button {
     font-family: "Roboto", sans-serif;
@@ -171,21 +172,27 @@ p {
     clip: rect(0 0 0 0);
     overflow: hidden;  
 }
+
+.benefits-container{
+    padding: 120px 0;
+    width: calc((100%-72px)/4);
+}
 .benefits-list{
     display: flex;
-    margin: 120px 0;
+    /* margin: 120px 0; */
     gap: 24px;
     
 }
-.benefits-item{
+/* .benefits-item{
     width: calc((100%-72px)/4);
-}
+} */
 .benefits-title, .benefits-subtitle{
     color: #2e2f42;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 
 }
 .benefits-text{
@@ -203,6 +210,7 @@ p {
 .team{
     background-color: #F4F4FD; 
     padding: 120px 0;
+    margin-bottom: 72px;
 }
 .team-title, .portfolio-title{
     color: #2E2F42;
@@ -241,6 +249,9 @@ p {
         text-align: center;
         color: #434455;
 }
+.team-info {
+    padding: 32px 0; 
+}
 
 
 
@@ -256,15 +267,18 @@ p {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 } 
 .portfolio-list{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
     gap: 24px;
 }
  .portfolio-item {
     background-color: #ffffff;
-    border: 1px solid #E7E9FC;
+    margin-bottom: 48px;
+    width: calc((100% - 48px) / 3);
 }
  .portfolio-name {
     font-size: 20px;
@@ -272,7 +286,11 @@ p {
     font-weight: 500;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 32px 0 8px 16px;
+    margin-bottom: 8px;
+        padding-left: 16px;
+        padding-top: 32px;
+        padding-right: 16px;
+        padding-bottom: 0;
 
 }
 .portfolio-category {
@@ -281,9 +299,23 @@ p {
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #434455;
-    padding: 8px 0 32px 16px;
+    padding-left: 16px;
+        padding-top: 0;
+        padding-bottom: 32px;
+        padding-right: 16px;
+}
+.portfolio-info {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none; 
+}
+.portfolio-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
 }
 
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
 
 
 
